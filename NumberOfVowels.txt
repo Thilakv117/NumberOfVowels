@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the Word: ");
+    String Word = sc.nextLine();
+    int count = 0;
+    for(int i = 0; i< Word.length();i++)
+    {
+      char Vowel = Word.charAt(i);
+      if(Vowel == 'a' || Vowel == 'e' || Vowel == 'i' || Vowel == 'o' || Vowel == 'u')
+      {
+       count++;
+      }
+    }
+     System.out.println("Number of Vowels: " + count);
+  }
+}
